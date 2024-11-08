@@ -10,6 +10,7 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
+import Img from '../img/user_617.jpg'
 const Post = () => {
   return (
     <Card sx={{ margin: 5 }}>
@@ -24,13 +25,13 @@ const Post = () => {
             <MoreVert />
           </IconButton>
         }
-        title="John Doe"
+        title="Boshra tk"
         subheader="September 14, 2022"
       />
       <CardMedia
         component="img"
         height="20%"
-        image="https://images.pexels.com/photos/4534200/pexels-photo-4534200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image={Img}
         alt="Paella dish"
       />
       <CardContent>

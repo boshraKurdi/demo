@@ -17,6 +17,7 @@ import {
   ListItemText,
   Switch,
 } from "@mui/material";
+import LightModeIcon from '@mui/icons-material/LightMode';
 import React from "react";
 
 const Sidebar = ({mode,setMode}) => {
@@ -83,9 +84,11 @@ const Sidebar = ({mode,setMode}) => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
-                <ModeNight />
+                {mode === 'dark' ? <ModeNight /> : < LightModeIcon/> }
               </ListItemIcon>
-              <Switch onChange={e=>setMode(mode === "light" ? "dark" : "light")}/>
+              <Switch onChange={e=>{
+                setMode(mode === "light" ? "dark" : "light")
+                }}/>
             </ListItemButton>
           </ListItem>
         </List>

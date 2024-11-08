@@ -11,6 +11,9 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
+import Img_1 from '../img/user_140.jpg'
+import Img_2 from '../img/user_369.jpg'
+import Img_3 from '../img/user_617.jpg'
 import React from "react";
 
 const Rightbar = () => {
@@ -23,32 +26,25 @@ const Rightbar = () => {
         <AvatarGroup max={7}>
           <Avatar
             alt="Remy Sharp"
-            src="https://material-ui.com/static/images/avatar/1.jpg"
+            src={Img_1}
           />
           <Avatar
             alt="Travis Howard"
-            src="https://material-ui.com/static/images/avatar/2.jpg"
+            src={Img_2}
           />
           <Avatar
             alt="Cindy Baker"
-            src="https://material-ui.com/static/images/avatar/3.jpg"
+            src={Img_3}
           />
+          <Avatar alt="Agnes Walker" src="" />
           <Avatar alt="Agnes Walker" src="" />
           <Avatar
             alt="Trevor Henderson"
+            src={Img_1}
+          />
+          <Avatar
+            alt="Trevor Henderson"
             src="https://material-ui.com/static/images/avatar/6.jpg"
-          />
-          <Avatar
-            alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/7.jpg"
-          />
-          <Avatar
-            alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/8.jpg"
-          />
-          <Avatar
-            alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/7.jpg"
           />
           <Avatar
             alt="Trevor Henderson"
@@ -61,19 +57,19 @@ const Rightbar = () => {
         <ImageList cols={3} rowHeight={100} gap={5}>
           <ImageListItem>
             <img
-              src="https://material-ui.com/static/images/image-list/breakfast.jpg"
+              src={Img_1}
               alt=""
             />
           </ImageListItem>
           <ImageListItem>
             <img
-              src="https://material-ui.com/static/images/image-list/burgers.jpg"
+              src={Img_2}
               alt=""
             />
           </ImageListItem>
           <ImageListItem>
             <img
-              src="https://material-ui.com/static/images/image-list/camera.jpg"
+              src={Img_3}
               alt=""
             />
           </ImageListItem>
@@ -84,7 +80,7 @@ const Rightbar = () => {
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Remy Sharp" src="https://material-ui.com/static/images/avatar/3.jpg" />
+          <Avatar alt="Remy Sharp" src={Img_2} />
         </ListItemAvatar>
         <ListItemText
           primary="Brunch this weekend?"
